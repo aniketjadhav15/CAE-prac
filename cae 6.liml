@@ -1,0 +1,163 @@
+﻿<liml8>
+  <analysis type="S30" />
+  <node nid="1" x="0" y="0" z="0" />
+  <node nid="2" x="300" y="0" z="0" />
+  <node nid="3" x="700" y="0" z="0" />
+  <elset name="Default" color="-6710887" />
+  <elset name="Component" color="-13572769" material="Material">
+    <elem eid="1" shape="line2" nodes="1 2" />
+  </elset>
+  <elset name="Component(2)" color="-6529181" material="Material(2)">
+    <elem eid="2" shape="line2" nodes="2 3" />
+  </elset>
+  <fix selection="Unnamed" />
+  <displacement selection="Unnamed(2)" axis="1">
+    <value>0</value>
+  </displacement>
+  <displacement selection="Unnamed(3)" axis="3">
+    <value>0</value>
+  </displacement>
+  <force selection="Unnamed(4)">
+    <x>400000</x>
+    <y>0</y>
+    <z>0</z>
+  </force>
+  <temperature2 selection="Unnamed(5)">
+    <value>40</value>
+  </temperature2>
+  <thermalstress referencetemperature="10" />
+  <mat mid="1" name="Material">
+    <geometric type="CircularBar" roundod="55.3" />
+    <mechanical type="Isotropic" youngsmodulus="70000" poissonratio="0.3" thermalexpansion="2.2E-05" />
+  </mat>
+  <mat mid="2" name="Material(2)">
+    <geometric type="CircularBar" roundod="39" />
+    <mechanical type="Isotropic" youngsmodulus="200000" poissonratio="0.3" thermalexpansion="1.2E-05" />
+  </mat>
+  <faceselection name="Unnamed">
+    <face eid="2" faceid="3" />
+  </faceselection>
+  <faceselection name="Unnamed(2)">
+    <face eid="1" faceid="2" />
+  </faceselection>
+  <faceselection name="Unnamed(3)">
+    <face eid="1" faceid="2" />
+  </faceselection>
+  <faceselection name="Unnamed(4)">
+    <face eid="1" faceid="3" />
+    <face eid="2" faceid="2" />
+  </faceselection>
+  <elementselection name="Unnamed(5)">
+    <element eid="1" />
+    <element eid="2" />
+  </elementselection>
+  <solution>
+    <analysis type="S30" />
+    <node nid="1" x="0" y="0" z="0" />
+    <node nid="2" x="300" y="0" z="0" />
+    <node nid="3" x="700" y="0" z="0" />
+    <elset name="Default" color="-6710887" />
+    <elset name="Component" color="-13572769" material="Material">
+      <elem eid="1" shape="line2" nodes="1 2" />
+    </elset>
+    <elset name="Component(2)" color="-6529181" material="Material(2)">
+      <elem eid="2" shape="line2" nodes="2 3" />
+    </elset>
+    <fix selection="Unnamed" />
+    <displacement selection="Unnamed(2)" axis="1">
+      <value>0</value>
+    </displacement>
+    <displacement selection="Unnamed(3)" axis="3">
+      <value>0</value>
+    </displacement>
+    <force selection="Unnamed(4)">
+      <x>400000</x>
+      <y>0</y>
+      <z>0</z>
+    </force>
+    <temperature2 selection="Unnamed(5)">
+      <value>40</value>
+    </temperature2>
+    <thermalstress referencetemperature="10" />
+    <mat mid="1" name="Material">
+      <geometric type="CircularBar" roundod="55.3" />
+      <mechanical type="Isotropic" youngsmodulus="70000" poissonratio="0.3" thermalexpansion="2.2E-05" />
+    </mat>
+    <mat mid="2" name="Material(2)">
+      <geometric type="CircularBar" roundod="39" />
+      <mechanical type="Isotropic" youngsmodulus="200000" poissonratio="0.3" thermalexpansion="1.2E-05" />
+    </mat>
+    <faceselection name="Unnamed">
+      <face eid="2" faceid="3" />
+    </faceselection>
+    <faceselection name="Unnamed(2)">
+      <face eid="1" faceid="2" />
+    </faceselection>
+    <faceselection name="Unnamed(3)">
+      <face eid="1" faceid="2" />
+    </faceselection>
+    <faceselection name="Unnamed(4)">
+      <face eid="1" faceid="3" />
+      <face eid="2" faceid="2" />
+    </faceselection>
+    <elementselection name="Unnamed(5)">
+      <element eid="1" />
+      <element eid="2" />
+    </elementselection>
+    <table>
+      <component>Default</component>
+      <component>Component</component>
+      <component>Component(2)</component>
+      <namedselection>Unnamed</namedselection>
+      <namedselection>Unnamed(2)</namedselection>
+      <namedselection>Unnamed(3)</namedselection>
+      <namedselection>Unnamed(4)</namedselection>
+      <namedselection>Unnamed(5)</namedselection>
+      <fieldvalue>displx</fieldvalue>
+      <fieldvalue>disply</fieldvalue>
+      <fieldvalue>displz</fieldvalue>
+      <fieldvalue>rotx</fieldvalue>
+      <fieldvalue>roty</fieldvalue>
+      <fieldvalue>rotz</fieldvalue>
+      <fieldvalue>tensileforce</fieldvalue>
+      <fieldvalue>sheary</fieldvalue>
+      <fieldvalue>shearz</fieldvalue>
+      <fieldvalue>torsion</fieldvalue>
+      <fieldvalue>bendingmomy</fieldvalue>
+      <fieldvalue>bendingmomz</fieldvalue>
+      <fieldvalue>twistangle</fieldvalue>
+      <fieldvalue>stresspt1</fieldvalue>
+      <fieldvalue>stresspt2</fieldvalue>
+      <fieldvalue>stresspt3</fieldvalue>
+      <fieldvalue>stresspt4</fieldvalue>
+      <fieldvalue>stressptu</fieldvalue>
+      <fieldvalue>displmag</fieldvalue>
+      <materials />
+      <coordinates />
+    </table>
+    <results>
+      <stats start="2023-05-14T14:24:54.9" end="2023-05-14T14:24:54.91" duration=".02" />
+      <node nid="1" displx="0" disply="0" displz="0" rotx="0" roty="0" rotz="0" tensileforce="94745.7791869015" sheary="0" shearz="0" torsion="0" bendingmomy="0" bendingmomz="0" twistangle="0" stresspt1="39.4475220668812" stresspt2="39.4475220668812" stresspt3="39.4475220668812" stresspt4="39.4475220668812" stressptu="39.4475220668812" displmag="0" />
+      <node nid="2" displx="0.367060808858062" disply="0" displz="0" rotx="0" roty="0" rotz="0" tensileforce="-105254.220813099" sheary="0" shearz="0" torsion="0" bendingmomy="0" bendingmomz="0" twistangle="0" stresspt1="-108.041441181075" stresspt2="-108.041441181075" stresspt3="-108.041441181075" stresspt4="-108.041441181075" stressptu="-108.041441181075" displmag="0.367060808858062" />
+      <node nid="3" displx="0" disply="0" displz="0" rotx="0" roty="0" rotz="0" tensileforce="-305254.220813098" sheary="0" shearz="0" torsion="0" bendingmomy="0" bendingmomz="0" twistangle="0" stresspt1="-255.530404429031" stresspt2="-255.530404429031" stresspt3="-255.530404429031" stresspt4="-255.530404429031" stressptu="-255.530404429031" displmag="0" />
+      <elem eid="1">
+        <localnode id="1" tensileforce="94745.7791869015" sheary="0" shearz="0" torsion="0" bendingmomy="0" bendingmomz="0" twistangle="0" stresspt1="39.4475220668812" stresspt2="39.4475220668812" stresspt3="39.4475220668812" stresspt4="39.4475220668812" stressptu="39.4475220668812" />
+        <localnode id="2" tensileforce="94745.7791869015" sheary="0" shearz="0" torsion="0" bendingmomy="0" bendingmomz="0" twistangle="0" stresspt1="39.4475220668812" stresspt2="39.4475220668812" stresspt3="39.4475220668812" stresspt4="39.4475220668812" stressptu="39.4475220668812" />
+      </elem>
+      <elem eid="2">
+        <localnode id="1" tensileforce="-305254.220813098" sheary="0" shearz="0" torsion="0" bendingmomy="0" bendingmomz="0" twistangle="0" stresspt1="-255.530404429031" stresspt2="-255.530404429031" stresspt3="-255.530404429031" stresspt4="-255.530404429031" stressptu="-255.530404429031" />
+        <localnode id="2" tensileforce="-305254.220813098" sheary="0" shearz="0" torsion="0" bendingmomy="0" bendingmomz="0" twistangle="0" stresspt1="-255.530404429031" stresspt2="-255.530404429031" stresspt3="-255.530404429031" stresspt4="-255.530404429031" stressptu="-255.530404429031" />
+      </elem>
+      <reactions>
+        <forcex nid="3" value="-305254.220813098" />
+        <forcey nid="3" value="0" />
+        <forcez nid="3" value="0" />
+        <momx nid="3" value="0" />
+        <momy nid="3" value="0" />
+        <momz nid="3" value="0" />
+        <forcex nid="1" value="-94745.7791869015" />
+        <forcez nid="1" value="0" />
+      </reactions>
+    </results>
+  </solution>
+</liml8>

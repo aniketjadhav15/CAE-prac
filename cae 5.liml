@@ -1,0 +1,103 @@
+﻿<liml8>
+  <analysis type="T30" />
+  <physics stefan="5.67E-08" />
+  <node nid="1" x="0" y="0" z="0" />
+  <node nid="2" x="-0.15" y="0" z="0" />
+  <node nid="3" x="-0.3" y="0" z="0" />
+  <node nid="4" x="-0.6" y="0" z="0" />
+  <elset name="Default" color="-6710887" />
+  <elset name="Component" color="-4319326" material="Material">
+    <elem eid="1" shape="line2" nodes="1 2" />
+  </elset>
+  <elset name="Component(2)" color="-5940965" material="Material(2)">
+    <elem eid="2" shape="line2" nodes="2 3" />
+  </elset>
+  <elset name="Component(3)" color="-509855" material="Material(3)">
+    <elem eid="3" shape="line2" nodes="3 4" />
+  </elset>
+  <temperature2 selection="Unnamed">
+    <value>20</value>
+  </temperature2>
+  <convectionbc selection="Unnamed(2)">
+    <ambienttemp>800</ambienttemp>
+    <coefficient>25</coefficient>
+  </convectionbc>
+  <mat mid="1" name="Material">
+    <geometric type="RectBar" recta="0.01" rectb="0.01" />
+    <thermal type="Isotropic" thermalconductivity="50" />
+  </mat>
+  <mat mid="2" name="Material(2)">
+    <geometric type="RectBar" recta="0.01" rectb="0.01" />
+    <thermal type="Isotropic" thermalconductivity="30" />
+  </mat>
+  <mat mid="3" name="Material(3)">
+    <geometric type="RectBar" recta="0.01" rectb="0.01" />
+    <thermal type="Isotropic" thermalconductivity="20" />
+  </mat>
+  <nodeselection name="Unnamed">
+    <node nid="1" />
+  </nodeselection>
+  <faceselection name="Unnamed(2)">
+    <face eid="3" faceid="3" />
+  </faceselection>
+  <solution>
+    <analysis type="T30" />
+    <physics stefan="5.67E-08" />
+    <node nid="1" x="0" y="0" z="0" />
+    <node nid="2" x="-0.15" y="0" z="0" />
+    <node nid="3" x="-0.3" y="0" z="0" />
+    <node nid="4" x="-0.6" y="0" z="0" />
+    <elset name="Default" color="-6710887" />
+    <elset name="Component" color="-4319326" material="Material">
+      <elem eid="1" shape="line2" nodes="1 2" />
+    </elset>
+    <elset name="Component(2)" color="-5940965" material="Material(2)">
+      <elem eid="2" shape="line2" nodes="2 3" />
+    </elset>
+    <elset name="Component(3)" color="-509855" material="Material(3)">
+      <elem eid="3" shape="line2" nodes="3 4" />
+    </elset>
+    <temperature2 selection="Unnamed">
+      <value>20</value>
+    </temperature2>
+    <convectionbc selection="Unnamed(2)">
+      <ambienttemp>800</ambienttemp>
+      <coefficient>25</coefficient>
+    </convectionbc>
+    <mat mid="1" name="Material">
+      <geometric type="RectBar" recta="0.01" rectb="0.01" />
+      <thermal type="Isotropic" thermalconductivity="50" />
+    </mat>
+    <mat mid="2" name="Material(2)">
+      <geometric type="RectBar" recta="0.01" rectb="0.01" />
+      <thermal type="Isotropic" thermalconductivity="30" />
+    </mat>
+    <mat mid="3" name="Material(3)">
+      <geometric type="RectBar" recta="0.01" rectb="0.01" />
+      <thermal type="Isotropic" thermalconductivity="20" />
+    </mat>
+    <nodeselection name="Unnamed">
+      <node nid="1" />
+    </nodeselection>
+    <faceselection name="Unnamed(2)">
+      <face eid="3" faceid="3" />
+    </faceselection>
+    <table>
+      <component>Default</component>
+      <component>Component</component>
+      <component>Component(2)</component>
+      <component>Component(3)</component>
+      <namedselection>Unnamed</namedselection>
+      <namedselection>Unnamed(2)</namedselection>
+      <fieldvalue>temperature</fieldvalue>
+      <coordinates />
+    </table>
+    <results>
+      <stats start="2023-05-14T14:06:42.02" end="2023-05-14T14:06:42.07" duration=".05" />
+      <node nid="1" temperature="20" />
+      <node nid="2" temperature="57.1428571428572" />
+      <node nid="3" temperature="119.047619047619" />
+      <node nid="4" temperature="304.761904761905" />
+    </results>
+  </solution>
+</liml8>
