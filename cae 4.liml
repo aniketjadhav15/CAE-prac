@@ -1,0 +1,134 @@
+﻿<liml8>
+  <analysis type="B21" maxmode="3" shift="0.2" />
+  <node nid="1" x="0" y="0" z="0" />
+  <node nid="2" x="-300" y="0" z="0" />
+  <node nid="3" x="-700" y="0" z="0" />
+  <node nid="4" x="-1000" y="0" z="0" />
+  <elset name="Default" color="-6710887" />
+  <elset name="Component" color="-12511480" material="Material">
+    <elem eid="1" shape="line2" nodes="1 2" />
+  </elset>
+  <elset name="Component(2)" color="-11072645" material="Material(2)">
+    <elem eid="2" shape="line2" nodes="2 3" />
+  </elset>
+  <elset name="Component(3)" color="-7727710" material="Material(3)">
+    <elem eid="3" shape="line2" nodes="3 4" />
+  </elset>
+  <fix selection="Unnamed" />
+  <force selection="Unnamed(2)">
+    <x>0</x>
+    <y>-5000</y>
+    <z>0</z>
+  </force>
+  <moment selection="Unnamed(3)">
+    <x>1000</x>
+    <y>0</y>
+    <z>0</z>
+  </moment>
+  <mat mid="1" name="Material">
+    <geometric type="UniformGeneralSection" izz="4220" area="225" />
+    <mechanical type="Isotropic" youngsmodulus="180" />
+  </mat>
+  <mat mid="2" name="Material(2)">
+    <geometric type="UniformGeneralSection" izz="834" area="100" />
+    <mechanical type="Isotropic" youngsmodulus="200" />
+  </mat>
+  <mat mid="3" name="Material(3)">
+    <geometric type="UniformGeneralSection" izz="4220" area="225" />
+    <mechanical type="Isotropic" youngsmodulus="180" />
+  </mat>
+  <faceselection name="Unnamed">
+    <face eid="3" faceid="3" />
+  </faceselection>
+  <nodeselection name="Unnamed(2)">
+    <node nid="1" />
+  </nodeselection>
+  <nodeselection name="Unnamed(3)">
+    <node nid="4" />
+  </nodeselection>
+  <solution>
+    <analysis type="B21" maxmode="3" shift="0.2" />
+    <node nid="1" x="0" y="0" z="0" />
+    <node nid="2" x="-300" y="0" z="0" />
+    <node nid="3" x="-700" y="0" z="0" />
+    <node nid="4" x="-1000" y="0" z="0" />
+    <elset name="Default" color="-6710887" />
+    <elset name="Component" color="-12511480" material="Material">
+      <elem eid="1" shape="line2" nodes="1 2" />
+    </elset>
+    <elset name="Component(2)" color="-11072645" material="Material(2)">
+      <elem eid="2" shape="line2" nodes="2 3" />
+    </elset>
+    <elset name="Component(3)" color="-7727710" material="Material(3)">
+      <elem eid="3" shape="line2" nodes="3 4" />
+    </elset>
+    <fix selection="Unnamed" />
+    <force selection="Unnamed(2)">
+      <x>0</x>
+      <y>-5000</y>
+      <z>0</z>
+    </force>
+    <moment selection="Unnamed(3)">
+      <x>1000</x>
+      <y>0</y>
+      <z>0</z>
+    </moment>
+    <mat mid="1" name="Material">
+      <geometric type="UniformGeneralSection" izz="4220" area="225" />
+      <mechanical type="Isotropic" youngsmodulus="180" />
+    </mat>
+    <mat mid="2" name="Material(2)">
+      <geometric type="UniformGeneralSection" izz="834" area="100" />
+      <mechanical type="Isotropic" youngsmodulus="200" />
+    </mat>
+    <mat mid="3" name="Material(3)">
+      <geometric type="UniformGeneralSection" izz="4220" area="225" />
+      <mechanical type="Isotropic" youngsmodulus="180" />
+    </mat>
+    <faceselection name="Unnamed">
+      <face eid="3" faceid="3" />
+    </faceselection>
+    <nodeselection name="Unnamed(2)">
+      <node nid="1" />
+    </nodeselection>
+    <nodeselection name="Unnamed(3)">
+      <node nid="4" />
+    </nodeselection>
+    <table>
+      <mode>1</mode>
+      <mode>2</mode>
+      <mode>3</mode>
+      <component>Default</component>
+      <component>Component</component>
+      <component>Component(2)</component>
+      <component>Component(3)</component>
+      <namedselection>Unnamed</namedselection>
+      <namedselection>Unnamed(2)</namedselection>
+      <namedselection>Unnamed(3)</namedselection>
+      <fieldvalue>displmag</fieldvalue>
+      <materials />
+      <coordinates />
+    </table>
+    <results>
+      <stats start="2023-05-14T13:49:36.31" end="2023-05-14T13:49:36.77" duration=".45" />
+      <mode id="1" bucklingfactor="17321537028348.3">
+        <node nid="1" displx="0.000364258689926266" disply="29.2073604624022" rotz="0.0495136154060333" displmag="29.2073604646737" />
+        <node nid="2" displx="-0.000450697368590913" disply="15.2268547392181" rotz="0.0445669503232726" displmag="15.2268547458881" />
+        <node nid="3" displx="0.00044183582984955" disply="2.03101955441618" rotz="0.0124784092919209" displmag="2.03101960247551" />
+        <node nid="4" displx="0" disply="0" rotz="0" displmag="0" />
+      </mode>
+      <mode id="2" bucklingfactor="69286148113392.5">
+        <node nid="1" displx="-0.000851603022716237" disply="2.54765712311349" rotz="0.0248818822175212" displmag="2.54765726544577" />
+        <node nid="2" displx="-0.00282898181917126" disply="-3.29749743249868" rotz="0.012866886428295" displmag="3.29749864601542" />
+        <node nid="3" displx="0.00192353052503662" disply="-1.68943854401752" rotz="-0.0091717687102662" displmag="1.68943963904654" />
+        <node nid="4" displx="0" disply="0" rotz="0" displmag="0" />
+      </mode>
+      <mode id="3" bucklingfactor="900719925474100">
+        <node nid="1" displx="-0.0395512920878384" disply="-0.701310550460017" rotz="-0.00317927842097415" displmag="0.702424937550162" />
+        <node nid="2" displx="-0.0230432963440245" disply="0.0276757877547456" rotz="-0.00403964431835062" displmag="0.036013091150917" />
+        <node nid="3" displx="0.0136744661816427" disply="-0.75251449127841" rotz="-0.00981097964270174" displmag="0.75263872515926" />
+        <node nid="4" displx="0" disply="0" rotz="0" displmag="0" />
+      </mode>
+    </results>
+  </solution>
+</liml8>
